@@ -45,5 +45,10 @@ public class TestCommand implements Command{
 	public String returnCommandDescription() {
 		return "v1.0 - c/checkmodular - Just a test command to see if the cJIT Command Handler is in fact loading and running commands correctly.";
 	}
+	
+	@Override
+	public String returnSearchableTagLine() { //Search Tags - will be used in Marketplace Search and c/find
+		return "Test Command Module JIT Customizable";
+	}
 
 }
